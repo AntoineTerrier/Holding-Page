@@ -1,0 +1,139 @@
+body{
+	margin : 0px;
+
+	font-family: 'Quicksand', sans-serif;
+
+}
+
+
+.container{
+	
+	display: flex;
+}
+
+
+.right{
+  flex: 1;
+  min-height:100vh; 
+  background-image: url("../img/dreamway-bg-right.jpg");
+  color: #FFFFFF;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  
+
+   
+}
+
+.left{
+  flex: 1;
+  min-height:100vh; 
+  background-image: url("../img/dreamway-bg-left.jpg");
+    color: #FFFFFF;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  
+}
+
+.contenu-L{
+	background-color : #00000080;
+	font-size:20px;	
+	
+}
+
+.contenu-R{
+	background-color : #00000080;
+	font-size: 20px;
+	margin-bottom: 10%
+		
+	
+
+
+}
+.logo{
+	float:right;
+}
+
+.bouton{
+	
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    text-align: center;
+    color: #000000;
+    border-radius: 10px;
+    background-color: #ADFF2F;
+    margin-right: -100px;
+   margin-top: 15px;
+
+}
+.bouton:hover {
+    background-color:#85C17E;
+
+}
+
+.bouton:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+
+@media screen and (max-width: 700px)
+{
+	h1{
+  	font-size: 22px;
+  	}
+
+  	h2{
+  	font-size: 18px;
+ 	}
+ 	h3{
+ 		font-size: 12px;
+ 	}
+	
+	.container{
+		flex-direction: column-reverse;
+		display:flex;
+	}
+
+	.left{
+		background-image: url("../img/dreamway-bg-right.jpg");
+		background-size: cover;
+		background-position: top;
+		height: 100vh;
+		margin-bottom: 0%;
+		
+
+	}
+
+	.right{
+		margin:0px;
+		min-height: 20%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image:url("../img/dreamway-bg-left.jpg");
+		background-size: border-box;
+		text-align:center;
+		justify-content: flex-start;
+		
+		
+	}
+	.contenu-R{
+		margin-top: 7.5%;
+	}
+		
+
+  .logo{
+  	height: 80px;
+  	width: 80px;
+  }
+	
+}
